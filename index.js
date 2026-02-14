@@ -11,8 +11,7 @@ for (i = 0; i < myNodeList.length; i++) {
 var close = document.getElementsByClassName("close");
 for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
-        var div = this.parentElement;
-        div.style.display = "none";
+        this.parentElement.remove();
     }
 }
 
@@ -37,8 +36,7 @@ function addTask() {
 
         for (i = 0; i < close.length; i++) {
             close[i].onclick = function () {
-                var div = this.parentElement;
-                div.style.display = "none";
+                this.parentElement.remove();
             }
         }
     }
